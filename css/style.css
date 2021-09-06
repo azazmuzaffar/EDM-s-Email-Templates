@@ -1,0 +1,469 @@
+/* >>> Fonts - Poppins and Rancho <<< */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,500&family=Rancho&display=swap");
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>> Common <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quasimoda", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+::selection {
+  background: #f5d4d4;
+}
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+  padding: 0px 60px 0px 117px;
+}
+.hero-banner .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+.hero-banner .container-fluid .col-lg-7,
+.hero-banner .container-fluid .col-lg-5 {
+  padding: 0;
+}
+.hero-banner .container-fluid .col-lg-5 {
+  position: relative;
+}
+.hero-banner .container-fluid .col-lg-5 .banner-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hero-banner .container-fluid .col-lg-5 .banner-text h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3vw;
+  font-weight: 600;
+  margin-bottom: 6%;
+}
+.hero-banner .container-fluid .col-lg-5 .banner-text h1 {
+  font-family: "Rancho";
+  font-size: 6vw;
+  color: #de4426;
+  margin-bottom: 6%;
+}
+.hero-banner .container-fluid .col-lg-5 .banner-text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4vw;
+}
+.hero-banner .container-fluid .col-lg-7 {
+  text-align: right;
+}
+.hero-banner .container-fluid .col-lg-7 img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .hero-banner {
+    position: relative;
+    overflow: hidden;
+    padding: 0px 40px 0px 67px;
+  }
+  .hero-banner .container-fluid .col-lg-5 .banner-text h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  .hero-banner .container-fluid .col-lg-5 .banner-text h1 {
+    font-size: 50px;
+    color: #de4426;
+    margin-bottom: 10px;
+  }
+  .hero-banner .container-fluid .col-lg-5 .banner-text p {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-banner {
+    position: relative;
+    overflow: hidden;
+    padding: 40px;
+    padding-bottom: 50px;
+  }
+  .hero-banner .container-fluid .col-lg-5 {
+    order: 12;
+  }
+  .hero-banner .container-fluid .col-lg-7 {
+    order: 1;
+  }
+  .hero-banner .container-fluid .col-lg-5 .banner-text {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(0%);
+  }
+  .hero-banner .container-fluid .col-lg-7 img {
+    width: 85%;
+  }
+}
+
+/*  >>>>>>>> Banner Bottom Design <<<<<< */
+
+.bottom-background-design {
+  position: relative;
+  margin-top: -8%;
+}
+.bottom-background-design img {
+  width: 100%;
+  height: auto;
+}
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>> Detail <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<< */
+
+.text-details {
+  background: #fed98b;
+  padding: 3% 0px 3% 0px;
+  text-align: center;
+}
+.text-details p {
+  font-family: "Rancho";
+  font-size: 30px;
+  color: #de4426;
+  line-height: 37px;
+}
+@media screen and (max-width: 1024px) {
+  .text-details {
+    padding: 20px 40px 20px 40px;
+  }
+  .text-details p br {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text-details {
+    padding: 20px 20px 20px 20px;
+  }
+  .text-details p {
+    font-size: 20px;
+    color: #de4426;
+    line-height: 30px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>> Deals <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<< */
+
+.--deals-- {
+  background: #fed98b;
+  text-align: center;
+  padding-bottom: 90px;
+}
+.--deals-- .deals-heading h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 19pt;
+}
+.--deals-- .deals-heading h1::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 7px solid transparent;
+  border-left: 300px solid #b30542;
+  margin: 15px;
+  border-bottom: 7px solid transparent;
+}
+.--deals-- .deals-heading h1::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 7px solid transparent;
+  border-right: 300px solid #b30542;
+  margin: 15px;
+  border-bottom: 7px solid transparent;
+}
+@media screen and (max-width: 768px) {
+  .--deals-- .deals-heading h1::after {
+    border-top: 4px solid transparent;
+    border-left: 100px solid #b30542;
+    border-bottom: 4px solid transparent;
+  }
+  .--deals-- .deals-heading h1::before {
+    border-top: 4px solid transparent;
+    border-right: 100px solid #b30542;
+    border-bottom: 4px solid transparent;
+  }
+}
+@media screen and (max-width: 600px) {
+  .--deals-- .deals-heading h1 {
+    font-size: 16pt;
+    margin-top: 20px;
+  }
+  .--deals-- .deals-heading h1::after {
+    border-left: 30px solid #b30542;
+    margin: 10px;
+  }
+  .--deals-- .deals-heading h1::before {
+    border-right: 30px solid #b30542;
+    margin: 10px;
+  }
+}
+.--deals-- .deal {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 40px 0px;
+}
+.--deals-- .deal .col-lg-4 {
+  text-align: right;
+}
+.--deals-- .deal .col-lg-4 .deal-image img {
+  width: 320px;
+}
+@media screen and (max-width: 1024px) {
+  .--deals-- {
+    overflow: hidden;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .--deals-- .deal .col-lg-4 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+.--deals-- .deal .col-lg-4 .deal-image.fastive img {
+  width: 280px;
+}
+.--deals-- .deal .col-lg-7 {
+  text-align: left;
+  padding: 0px 30px;
+  padding-right: 0;
+}
+.--deals-- .deal .col-lg-7 h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 19pt;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.--deals-- .deal .col-lg-7 p {
+  font-family: "Poppins", sans-serif;
+  font-size: 12pt;
+  font-weight: 600;
+}
+.--deals-- .deal .col-lg-7 span {
+  font-family: "Poppins", sans-serif;
+  font-size: 12pt;
+  font-weight: 600;
+}
+.--deals-- .deal .col-lg-7 a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12pt;
+  line-height: 25px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 35px;
+  background: #b30542;
+  border-radius: 9px;
+}
+.--deals-- .deal .col-lg-7 .price-and-delivery {
+  display: flex;
+  margin: 30px 0px;
+}
+.--deals-- .deal .col-lg-7 .price {
+  padding-right: 30px;
+}
+.--deals-- .deal .col-lg-7 .actual-price {
+  position: relative;
+}
+.--deals-- .deal .col-lg-7 .actual-price:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+@media screen and (max-width: 600px) {
+  .--deals-- {
+    padding-left: 10px;
+    padding-right: 30px;
+  }
+  .--deals-- .deal .col-lg-4 .deal-image.fastive img {
+    width: 220px;
+  }
+  .--deals-- .deal .col-lg-4 .deal-image img {
+    width: 220px;
+  }
+  .--deals-- .deal .col-lg-7 h2 {
+    font-size: 15pt;
+  }
+  .--deals-- .deal .col-lg-7 p {
+    font-size: 10pt;
+  }
+  .--deals-- .deal .col-lg-7 span {
+    font-size: 10pt;
+  }
+  .--deals-- .deal .col-lg-7 a {
+    font-size: 10pt;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>> Deals <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<< */
+
+.--deals-- .--gifts-- {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 30px 0px;
+  padding-bottom: 0;
+}
+.--deals-- .--gifts-- h1 {
+  font-size: 19pt;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1330px) {
+  .--deals-- .--gifts-- {
+    width: 900px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .--deals-- .--gifts-- {
+    width: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .--deals-- .col-lg-4 {
+    margin-top: 30px;
+    margin-left: 6%;
+  }
+  .--deals-- .--gifts-- h1 {
+    font-size: 15pt;
+    margin-bottom: 20px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>> Footer <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<< */
+
+footer {
+  background: #f2f2f2;
+  padding: 50px 100px;
+}
+footer p {
+  font-family: "Poppins", sans-serif;
+  font-size: 8pt;
+  font-weight: 500;
+  padding: 20px 0px 30px 0px;
+}
+footer ul {
+  list-style: none;
+  margin-left: 2.3em;
+  text-indent: -2.3em;
+}
+footer li img {
+  padding-right: 20px;
+}
+footer li a {
+  color: unset;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 10pt;
+}
+footer li a:hover {
+  color: #f89335;
+}
+footer li span {
+  font-family: "Poppins", sans-serif;
+  font-size: 10pt;
+  font-weight: 600;
+}
+footer .--about-- ul li {
+  padding-top: 6px;
+}
+footer .--business-- h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 10pt;
+  font-weight: 600;
+}
+footer .--business-- ul li {
+  padding-top: 6px;
+}
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 50px 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .the-tab-col {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 30px 20px;
+  }
+  footer .the-mob-col {
+    margin-top: 30px;
+  }
+}
+
+/* >>> Mini Footer <<< */
+
+.mini-footer {
+  display: flex;
+  background: #fed98b;
+  padding: 12px 100px;
+  align-items: center;
+}
+.mini-footer .--copyright-- {
+  width: 50%;
+}
+.mini-footer .payment-methods {
+  width: 50%;
+}
+.mini-footer .payment-methods img {
+  float: right;
+}
+.mini-footer a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: unset;
+}
+.mini-footer span {
+  font-family: "Poppins", sans-serif;
+  font-size: 10pt;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .mini-footer {
+    padding: 12px 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mini-footer {
+    display: block;
+    padding: 12px 20px;
+  }
+  .mini-footer .--copyright-- {
+    width: 100%;
+    text-align: center;
+  }
+  .mini-footer .payment-methods {
+    display: none;
+  }
+}
